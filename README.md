@@ -1,4 +1,4 @@
-# E-Commerce Furniture store built with React 
+## E-Commerce Furniture store built with React 
 
 - React,
 - React-icons,

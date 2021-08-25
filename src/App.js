@@ -22,19 +22,21 @@ function App() {
 				<Route exact path='/'>
 					<Home />
 				</Route>
-				<Route path='/about'>
+				<Route exact path='/about'>
 					<About />
 				</Route>
-				<Route path='/cart'>
+				<Route exact path='/cart'>
 					<Cart />
 				</Route>
 				<Route exact path='/products'>
 					<Products />
 				</Route>
 				<Route path='/products/:id' children={<SingleProduct />} />
+				<Route exact path='/checkout' /* path='/products/:id' children={<SingleProduct />}  */ >
 				{/* <PrivateRoute path='/checkout'> */}
 					<Checkout />
 				{/* </PrivateRoute> */}
+				</Route>
 				<Route path='*'>
 					<Error />
 				</Route>
