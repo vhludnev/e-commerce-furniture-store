@@ -7,9 +7,10 @@ export const formatPrice = number => {
   
 export const getUniqueValues = (data, type) => {
 	let unique = data.map(item => item[type])
+
 	if (type === 'colors') {
-	  	unique = unique.flat()
+	  	unique = unique.flat() // will convert array of arrays in one array with unique colors
 	}
-  
+	
 	return ['all', ...new Set(unique)]
 }

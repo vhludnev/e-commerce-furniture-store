@@ -84,6 +84,4 @@ export const ProductsProvider = ({ children }) => {
 	)
 }
 // make sure use
-export const useProductsContext = () => {
-  	return useContext(ProductsContext)
-}
+export const useProductsContext = () => useContext(ProductsContext)
