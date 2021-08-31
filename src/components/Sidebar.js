@@ -13,7 +13,7 @@ const Sidebar = () => {
 	// console.log(data)
 	// const isSidebarOpen = false
 	const { isSidebarOpen, closeSidebar } = useProductsContext()
-	//const { myUser } = useUserContext()
+	const { myUser } = useUserContext()
 	return (
 		<SidebarContainer>
 			<aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`} >
@@ -33,13 +33,13 @@ const Sidebar = () => {
 							</li>
 						)
 					})}
-					{/* {myUser && (*/}
+					{myUser && (
 						<li>
 							<Link to='/checkout' onClick={closeSidebar}>
 								checkout
 							</Link>
 						</li>
-					{/*})} */}
+					)}
 				</ul>
 				<CartButtons />
 			</aside>
