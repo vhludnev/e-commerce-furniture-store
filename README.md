@@ -1,11 +1,13 @@
-## E-Commerce Furniture store built with React 
+## E-Commerce Furniture store built with React hooks
 
 - React,
 - React-icons,
 - React-hooks (useEffect, useState, useRouter, useContext, etc.)
 - Styled-components
 - Spinner,
-- Sass,
 - Responsive display
-- Login Authentication: Firebase Auth
-- Backend: Firebase Firestore
+- Login Authentication: Auth0
+- Payments: Stripe
+- Netlify functions 
+
+[Check on web](https://e-commerce-furniture.netlify.app)
